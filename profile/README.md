@@ -1,6 +1,6 @@
 # Transmute Games 🧪
 
-**Empowering Game Developers, One Pixel at a Time**
+**Empowering Game Developers, One Pixel at a Time.**
 
 Welcome to Transmute Games, where we are dedicated to empowering game developers with unique and easy-to-use tools for creating amazing games. Our flagship product, the TransmuteCore game engine, along with its starter kit, is designed to simplify the development of Java-based pixel-rendered games. But our mission extends far beyond that.
 

@@ -24,6 +24,7 @@ class ImageLinks(HTMLParser):
 
 
 def validate():
+    subprocess.run(["git", "diff", "--check", "origin/main...HEAD"], cwd=ROOT, check=True)
     subprocess.run(["git", "diff", "--check", "HEAD"], cwd=ROOT, check=True)
     for path in ROOT.rglob("*.md"):
         if ".git" in path.parts or ".flox" in path.parts:
@@ -41,7 +42,7 @@ def validate():
                 raise ValueError(f"{path.relative_to(ROOT)}: broken local link {link}")
 
     brand = ROOT / "assets/brand"
-    for path in brand.glob("*.svg"):
+    for path in brand.rglob("*.svg"):
         document = ET.parse(path)
         if document.getroot().tag != "{http://www.w3.org/2000/svg}svg":
             raise ValueError(f"{path.name}: invalid SVG root")

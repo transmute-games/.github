@@ -19,6 +19,10 @@ uploads. See the brand notes for the files to use.
 
 Run `flox activate -- python3 scripts/validate.py` to check local links, SVG
 dependencies, sharing-image dimensions, and the preview's file-size budget.
+The whitespace check covers both committed changes against `origin/main` and
+local edits. Fetch `origin/main` before verifying a new change. Run the focused
+regressions with `flox activate -- python3 -B -m unittest discover -s scripts`.
+The native Bellows profile runs those tests before checking the assets.
 
 Before pushing, commit the intended changes and run
 `bellows verify --repository transmute-games/.github --profile native --base origin/main --head HEAD --mode head`.

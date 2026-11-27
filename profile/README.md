@@ -1,5 +1,6 @@
 <h1 align="left">
-  <img src="../assets/brand/logo.png" alt="Transmute Games" width="220">
+  <img src="../assets/brand/avatar.png" alt="" width="40" height="40" align="absmiddle">
+  Transmute Games
 </h1>
 
 <p align="left"><strong>A little code. A lot to play.</strong></p>

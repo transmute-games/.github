@@ -1,0 +1,9 @@
+version: 1
+secrets:
+  mode: none
+profiles:
+  native:
+    executor: flox
+    checks:
+      assets:
+        argv: [python3, scripts/validate.py]

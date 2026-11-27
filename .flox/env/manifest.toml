@@ -1,0 +1,5 @@
+schema-version = "1.19.0"
+
+[install]
+python3.pkg-path = "python3"
+git.pkg-path = "git"

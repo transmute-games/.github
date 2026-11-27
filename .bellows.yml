@@ -1,0 +1,12 @@
+version: 1
+secrets:
+  mode: none
+profiles:
+  native:
+    executor: flox
+    checks:
+      tests:
+        argv: [python3, -B, -m, unittest, discover, -s, scripts, -p, 'test_*.py']
+      assets:
+        argv: [python3, scripts/validate.py]
+        needs: [tests]
